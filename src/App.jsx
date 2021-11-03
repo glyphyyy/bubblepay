@@ -1,7 +1,7 @@
 import Navbar from "./components/navbar/Navbar";
 import React from 'react';
 import "./app.scss"
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { useState } from 'react';
 import ProductDropDown from "./components/productDropDown/ProductDropDown";
 import Hero from "./components/hero/Hero";
