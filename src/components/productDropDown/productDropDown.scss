@@ -1,0 +1,75 @@
+@import "../../global.scss";
+
+.productDropDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: unset;
+
+    .menuContainer {
+        z-index: 9;
+        position: absolute;
+        top: -120px;
+        width: 60%;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(3px);
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        overflow-x: unset;
+
+        &.active {
+            top: 80px;
+            opacity: 1;
+        }
+
+        .item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: unset;
+            
+            ul {
+                margin-top: 50px;
+                height: 100%;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+                overflow-x: unset;
+
+                li {
+                    height: 50%;
+                    width: 30%;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    overflow-x: unset;
+
+                    .link {
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $darkBlue;
+                        overflow-x: unset;
+
+                        &:hover {
+                            color: $midBlue;
+                        }
+                    }
+
+                    p {
+                        overflow-x: unset;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $darkBlue;
+                    }
+                }
+            }
+        }
+    }
+}

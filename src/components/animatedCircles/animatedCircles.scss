@@ -1,0 +1,128 @@
+@import "../../global.scss";
+
+.circleLarge1 {
+    filter: blur(4px);
+    width: 200px;
+    height: 200px;
+    background-color: $lightBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlelarge1 25s linear alternate infinite;
+        @keyframes circlelarge1 {
+            to{
+                transform: translate(80vw, 60vh);
+            }
+        }
+}
+
+.circleLarge2 {
+    filter: blur(4px);
+    width: 250px;
+    height: 250px;
+    background-color: $midBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlelarge2 50s linear alternate infinite;
+        @keyframes circlelarge2 {
+            to{
+                transform: translate(80vw, 10vh);
+            }
+        }
+}
+
+.circleMedium1 {
+    filter: blur(3px);
+    width: 100px;
+    height: 100px;
+    background-color: $midBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlemedium1 20s linear alternate infinite;
+        @keyframes circlemedium1 {
+            to{
+                transform: translate(80vw, 10vh);
+            }
+        }
+}
+
+.circleMedium2 {
+    filter: blur(3px);
+    width: 100px;
+    height: 100px;
+    background-color: $lightBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlemedium2 15s linear alternate infinite;
+        @keyframes circlemedium2 {
+            to{
+                transform: translate(80vw, 30vh);
+            }
+        }
+}
+
+.circleSmall1 {
+    filter: blur(3px);
+    width: 60px;
+    height: 60px;
+    background-color: $lightBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlesmall1 15s linear alternate infinite;
+        @keyframes circlesmall1 {
+            to{
+                transform: translate(80vw, -40vh);
+            }
+        }
+}
+
+.circleSmall1 {
+    filter: blur(3px);
+    width: 60px;
+    height: 60px;
+    background-color: $midBlue;
+    opacity: 0.2;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlesmall2 15s linear alternate infinite;
+        @keyframes circlesmall2 {
+            to{
+                transform: translate(80vw, -20vh);
+            }
+        }
+}
+

@@ -1,0 +1,195 @@
+@import "../../global.scss";
+
+.hero {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+
+    @media screen and (max-width: 500px) 
+    {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        z-index: 3;
+        width: 57%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 500px) 
+        {
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 65%;
+            height: 100%;
+
+            @media screen and (max-width: 1300px) 
+            {
+                width: 90%;
+            }
+            @media screen and (max-width: 768px) 
+            {
+                width: 95%;
+            }
+            @media screen and (max-width: 500px) 
+            {
+                align-items: center;
+            }
+
+            h1 {
+                width: 100%;
+                font-size: 70px;
+                text-align: left;
+                line-height: 100px;
+                color: $darkBlue;
+
+                span {
+                    color: $midBlue;
+                }
+
+                @media screen and (max-width: 1000px) 
+                {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px) 
+                and (orientation : landscape)
+                {
+                    font-size: 46px;
+                    line-height: 66px;
+                }
+                @media screen and (max-width: 500px) 
+                {
+                    overflow-x: unset;
+                    font-size: 36px;
+                    line-height: 46px;
+                    text-align: center;
+                }
+                @media screen and (max-width: 320px) 
+                {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            p {
+                width: 75%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 22px;
+                font-weight: 300;
+                text-align: left;
+                line-height: 40px;
+                color: #323353;
+
+            span {
+                    font-weight: 600;
+                }
+
+                @media screen and (max-width: 1024px) 
+                {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                @media screen and (max-width: 500px) 
+                {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 26px;
+                    overflow-x: unset;
+                }
+            }
+
+            .button {
+                padding: 20px 25px;
+                background-color: $midBlue;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+
+                @media screen and (max-width: 500px) 
+                {
+                    overflow-x: unset;
+                }
+
+                &:hover {
+                    background-color: $darkBlue;
+                }
+            }
+
+            h2 {
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: 14px;
+                text-align: left;
+                color: $grey;
+
+                @media screen and (max-width: 500px) 
+                {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    overflow-x: unset;
+                }
+
+                .sign-in {
+                    color: $midBlue;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 43%;
+        height: 100%;
+
+        @media screen and (max-width: 500px) 
+        {
+            height: 0%;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+
+            @media screen and (max-width: 1300px) 
+            {
+                right: -200px;
+            }
+            @media screen and (max-width: 768px) 
+            {
+                right: -340px;
+            }
+            @media screen and (max-width: 500px) 
+            {
+                display: none;
+            }
+    
+        }
+    }
+}

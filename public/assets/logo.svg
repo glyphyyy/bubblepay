@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="317" height="49" viewBox="0 0 317 49">
+  <g id="Logo" transform="translate(-60 -28)">
+    <text id="BubblePay" transform="translate(60 67)" fill="#323353" font-size="40" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">Bubble</tspan><tspan y="0" fill="#4d9be6">Pay</tspan></text>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="20" cy="20" r="20" transform="translate(305 33)" fill="#8fd3ff"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="20" cy="20" r="20" transform="translate(321 33)" fill="#4d9be6"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(337 33)" fill="#4d65b4"/>
+  </g>
+</svg>

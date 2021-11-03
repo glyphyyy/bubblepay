@@ -1,0 +1,68 @@
+@import "../../global.scss";
+
+.burgerMenu {
+    z-index: 9;
+    width: 400px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: -400px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    transition: all 1s ease;
+    opacity: 0;
+    
+    &.burgerActive {
+        right: 0;
+        opacity: 1;
+        touch-action: none;
+    }
+
+    ul {
+        height: 60%;
+        margin-top: 110px;
+        margin-right: 40px;
+        padding: 0;
+        list-style: none;
+        color: $darkBlue;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: right;
+
+        @media screen and (max-width: 500px) 
+        {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 320px) 
+        {
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        
+
+        li {
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 320px) 
+            {
+                margin-bottom: 20px;
+            }
+            
+            a {
+                font-family: 'Poppins', sans-serif;
+                text-align: inherit;
+                text-decoration: none;
+                color: inherit;
+                font-size: inherit;
+            }
+
+            &:hover {
+                color: $midBlue;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
