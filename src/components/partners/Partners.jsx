@@ -56,7 +56,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/xero-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.xero.com/uk/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -64,7 +64,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/chase-logo.svg" alt="" />
-                        <a href="https://www.xero.com/uk/">
+                        <a href="https://www.chase.com/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
