@@ -16,7 +16,7 @@ export default function Partners() {
                 <div className="partnerList">
                     <div className="partnerItem">
                         <img src="assets/monzo-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://monzo.com/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -24,7 +24,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/visa-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.visa.co.uk/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -32,7 +32,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/mastercard-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.mastercard.co.uk/en-gb.html">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -40,7 +40,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/dell-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.dell.com/en-uk">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -48,7 +48,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/american-express-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.americanexpress.com/en-gb/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -64,7 +64,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/chase-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.xero.com/uk/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
@@ -72,7 +72,7 @@ export default function Partners() {
                     </div>
                     <div className="partnerItem">
                         <img src="assets/citi-logo.svg" alt="" />
-                        <a href="">
+                        <a href="https://www.citigroup.com/citi/">
                             <img id="circleDark" src="assets/circleDark.svg" alt="" />
                             <img id="circleLight" src="assets/circleLight.svg" alt="" />
                             <img id="circleArrow" src="assets/circleArrow.svg" alt="" />
