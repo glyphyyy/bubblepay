@@ -2,3 +2,11 @@ $darkBlue: #323353;
 $midBlue: #4D9BE6;
 $lightBlue: #8FD3FF;
 $grey: #9494A2;
+
+$breakpoint: (
+  small: 320px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);

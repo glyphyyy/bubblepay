@@ -9,10 +9,21 @@
     justify-content: center;
     flex-direction: row;
 
-    @media screen and (max-width: 500px) 
+    @media screen and (max-width: map-get($breakpoint, large)) 
+    {
+        flex-direction: column;
+    }
+    @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+    {
+        height: 150vh;
+    }
+    @media screen and (max-width: map-get($breakpoint, medium)) 
     {
         height: 100vh;
-        flex-direction: column-reverse;
+    }
+    @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+    {
+        height: 130vh;
     }
 
     .left {
@@ -24,11 +35,21 @@
         justify-content: center;
         flex-direction: column;
 
-        @media screen and (max-width: 500px) 
+        @media screen and (max-width: map-get($breakpoint, large)) 
         {
-            align-items: center;
-            height: 100%;
             width: 100%;
+            height: calc(60% - 100px);
+        }
+        @media screen and (max-width: map-get($breakpoint, medium)) 
+        {
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+        {
+            height: 100%;
+            margin-top: 100px;
         }
 
         .container {
@@ -39,17 +60,23 @@
             width: 65%;
             height: 100%;
 
-            @media screen and (max-width: 1300px) 
+            @media screen and (max-width: map-get($breakpoint, xxlarge)) 
             {
                 width: 90%;
             }
-            @media screen and (max-width: 768px) 
+            @media screen and (max-width: map-get($breakpoint, large)) 
             {
                 width: 95%;
+                justify-content: flex-start;
             }
-            @media screen and (max-width: 500px) 
+            @media screen and (max-width: map-get($breakpoint, medium)) 
             {
                 align-items: center;
+                justify-content: center;
+            }
+            @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+            {
+                justify-content: center;
             }
 
             h1 {
@@ -58,35 +85,30 @@
                 text-align: left;
                 line-height: 100px;
                 color: $darkBlue;
+                overflow-x: unset;
 
                 span {
                     color: $midBlue;
                 }
 
-                @media screen and (max-width: 1000px) 
+                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
                 {
-                    font-size: 50px;
-                    line-height: 70px;
+                    font-size: 70px;
+                    line-height: 100px;
                 }
-                @media only screen 
-                and (min-device-width : 768px) 
-                and (max-device-width : 1024px) 
-                and (orientation : landscape)
+                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
                 {
-                    font-size: 46px;
-                    line-height: 66px;
+                    font-size: 40px;
+                    line-height: 56px;
                 }
-                @media screen and (max-width: 500px) 
+                @media screen and (max-width: map-get($breakpoint, medium)) 
                 {
-                    overflow-x: unset;
-                    font-size: 36px;
-                    line-height: 46px;
                     text-align: center;
                 }
-                @media screen and (max-width: 320px) 
+                @media screen and (max-width: map-get($breakpoint, small)) 
                 {
-                    font-size: 30px;
-                    line-height: 40px;
+                    font-size: 20px;
+                    line-height: 30px;
                 }
             }
 
@@ -99,23 +121,30 @@
                 text-align: left;
                 line-height: 40px;
                 color: #323353;
+                overflow-x: unset;
 
-            span {
+                span {
                     font-weight: 600;
                 }
 
-                @media screen and (max-width: 1024px) 
+                @media screen and (max-width: map-get($breakpoint, large)) 
                 {
                     font-size: 20px;
                     line-height: 30px;
                 }
-                @media screen and (max-width: 500px) 
+                @media screen and (max-width: map-get($breakpoint, medium)) 
                 {
-                    text-align: center;
                     width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                     font-size: 16px;
                     line-height: 26px;
-                    overflow-x: unset;
+                    text-align: center;
+                }
+                @media screen and (max-width: map-get($breakpoint, small)) 
+                {
+                    font-size: 14px;
+                    line-height: 22px;
                 }
             }
 
@@ -127,10 +156,12 @@
                 font-size: 18px;
                 font-weight: 600;
                 text-decoration: none;
+                overflow-x: unset;
 
-                @media screen and (max-width: 500px) 
+                @media screen and (max-width: map-get($breakpoint, small)) 
                 {
-                    overflow-x: unset;
+                    font-size: 16px;
+                    padding: 15px 20px;
                 }
 
                 &:hover {
@@ -144,12 +175,11 @@
                 font-size: 14px;
                 text-align: left;
                 color: $grey;
+                overflow-x: unset;
 
-                @media screen and (max-width: 500px) 
+                @media screen and (max-width: map-get($breakpoint, medium)) 
                 {
-                    margin-top: 20px;
-                    font-size: 16px;
-                    overflow-x: unset;
+                    display: none;
                 }
 
                 .sign-in {
@@ -163,10 +193,22 @@
         width: 43%;
         height: 100%;
 
-        @media screen and (max-width: 500px) 
+        @media screen and (max-width: map-get($breakpoint, large)) 
         {
-            height: 0%;
             width: 100%;
+            height: calc(40% - 100px);
+        }
+        @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+        {
+            height: 50%;
+        }
+        @media screen and (max-width: map-get($breakpoint, medium)) 
+        {
+            display: none;
+        }
+        @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+        {
+            display: none;
         }
 
         img {
@@ -176,20 +218,17 @@
             top: 80px;
             right: 140px;
             
-
-            @media screen and (max-width: 1300px) 
+            @media screen and (max-width: map-get($breakpoint, xxlarge)) 
             {
-                right: -200px;
+                right: -100px;
             }
-            @media screen and (max-width: 768px) 
+            @media screen and (max-width: map-get($breakpoint, large)) 
             {
-                right: -340px;
-            }
-            @media screen and (max-width: 500px) 
-            {
-                display: none;
-            }
-    
+                right: -140px;
+                height: unset;
+                width: 95%;
+                top: 35%;
+            }    
         }
     }
 }

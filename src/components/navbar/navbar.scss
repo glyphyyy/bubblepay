@@ -7,14 +7,7 @@
     z-index: 10;
     box-shadow: 0px 6px 10px rgba(128, 128, 128, 0.1);
 
-    @media screen and (max-width: 768px) 
-    {
-        position: fixed;
-    }
-    @media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px) 
-    and (orientation : landscape)
+    @media screen and (max-width: map-get($breakpoint, large))
     {
         position: fixed;
     }
@@ -37,22 +30,11 @@
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
-            @media screen and (max-width: 1300px) 
-            {
-                width: 70%;
-            }
-            @media screen and (max-width: 1100px) 
-            {
-                width: 80%;
-            }
-            @media screen and (max-width: 1000px) 
+            @media screen and (max-width: map-get($breakpoint, xxlarge)) 
             {
                 width: 90%;
             }
-            @media screen and (max-width: 768px) 
-            {
-                width: 90%;
-            }
+
 
             .left {
                 width: 80%;
@@ -75,18 +57,11 @@
                     display: flex;
                     justify-content: space-between;
 
-                    @media screen and (max-width: 1200px) 
+                    @media screen and (max-width: map-get($breakpoint, xlarge)) 
                     {
                         margin-left: 20px;
                     }
-                    @media only screen 
-                    and (min-device-width : 768px) 
-                    and (max-device-width : 1024px) 
-                    and (orientation : landscape)
-                    {
-                        display: none;
-                    }
-                    @media screen and (max-width: 768px) 
+                    @media screen and (max-width: map-get($breakpoint, large)) 
                     {
                         display: none;
                     }
@@ -153,14 +128,7 @@
                     text-decoration: none;
                     letter-spacing: 2px;
 
-                    @media only screen 
-                    and (min-device-width : 768px) 
-                    and (max-device-width : 1024px) 
-                    and (orientation : landscape)
-                    {
-                        display: none;
-                    }
-                    @media screen and (max-width: 768px) 
+                    @media screen and (max-width: map-get($breakpoint, large)) 
                     {
                         display: none;
                     }
@@ -173,29 +141,7 @@
                 .hamburger {
                     display: hidden;
 
-                    @media only screen 
-                    and (min-device-width : 768px) 
-                    and (max-device-width : 1024px) 
-                    and (orientation : landscape)
-                    {
-                        display: block;
-                        width: 30px;
-                        height: 25px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        cursor: pointer;
-        
-                        span {
-                            width: 100%;
-                            height: 4px;
-                            background-color: $darkBlue;
-                            border-radius: 25px;
-                            transform-origin: left;
-                            transition: all 1s ease;
-                        }
-                    }
-                    @media screen and (max-width: 768px)
+                    @media screen and (max-width: map-get($breakpoint, large)) 
                     {
                         display: block;
                         width: 30px;
