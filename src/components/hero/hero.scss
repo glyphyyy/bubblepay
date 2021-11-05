@@ -83,7 +83,7 @@
                 width: 100%;
                 font-size: 70px;
                 text-align: left;
-                line-height: 100px;
+                line-height: 90px;
                 color: $darkBlue;
                 overflow-x: unset;
 
@@ -91,11 +91,6 @@
                     color: $midBlue;
                 }
 
-                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
-                {
-                    font-size: 70px;
-                    line-height: 100px;
-                }
                 @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
                 {
                     font-size: 40px;
@@ -116,7 +111,7 @@
                 width: 75%;
                 margin-top: 30px;
                 margin-bottom: 30px;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 300;
                 text-align: left;
                 line-height: 40px;

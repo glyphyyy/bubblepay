@@ -5,9 +5,8 @@
     width: 100%;
     background-color: white;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    flex-direction: row;
 
     @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
     {
@@ -32,365 +31,333 @@
         height: 160vh;
     }
 
-    #sideCircle {
-        position: absolute;
-        left: 0;
-        top: 120vh;
-
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
-        {
-            left: -170px;
-            top: 115vh;
-        }
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-        {
-            display: none;
-        }
-    }
-
-    #sideCircleRight {
-        position: absolute;
-        right: 0;
-        top: 165vh;
-        transform: rotate(180deg);
-
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
-        {
-            top: 140vh;
-            right: -110px;
-        }
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-        {
-            display: none;
-        }
-    }
-
-    .left {
-        z-index: 3;
-        width: 50%;
+    .bg {
         height: 100%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow-x:unset;
+        position: absolute;
 
-        @media screen and (max-width: map-get($breakpoint, medium)) 
-        {
+        .earth {
+            height: 100%;
             width: 100%;
-            height: 50%;
-            margin-bottom: 40px;
-        }
-        @media screen and (max-width: map-get($breakpoint, small)) 
-        {
-            margin-bottom: 0px;
-        }
-        
-        .circle {
-            overflow-x:unset;
-            margin-left: 100px;
-            width: 560px;
-            height: 560px;
-            background: $lightBlue;
-            border-radius: 50%;
-            margin-bottom: 20px;
-
-            @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
-            {
-                width: 440px;
-                height: 440px;
-                margin-left: 0px;
-            }
-            @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-            {
-                width: 360px;
-                height: 360px;
-                margin-left: 0px;
-            }
-            @media screen and (max-width: map-get($breakpoint, medium)) 
-            {
-                width: 340px;
-                height: 340px;
-            }
-            @media screen and (max-width: map-get($breakpoint, small)) 
-            {
-                width: 300px;
-                height: 300px;
-            }
-        }
-
-        img {
-            margin-left: 50px;
-            position: absolute;
-            height: 70%;
-            width: 100%;
-
-            @media screen and (max-width: map-get($breakpoint, large)) 
-            {
-                height: 50%;
-                margin-left: 0px;
-            }
-            @media screen and (max-width: map-get($breakpoint, medium)) 
-            {
-                height: 70%;
-            }
-            @media screen and (max-width: map-get($breakpoint, small)) 
-            {
-                height: 80%;
-            }
-            @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
-            {
-                height: unset;
-                width: 40%;
-            }
-            
-            &#phoneGrey {
-                opacity: 0;
-                transform: translateY(20%);
-                animation: fadeInUp 6s infinite;
-
-                @keyframes fadeInUp {
-                    10%, 100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
-            &#phoneCard {
-                opacity: 0;
-                transform: translateY(-20%);
-                animation: fadeInDown 6s ease forwards infinite;
-
-                @keyframes fadeInDown {
-                    10% {
-                        opacity: 0;
-                        transform: translateY(-20%);
-                    }
-                    20% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
-            &#phonePay {
-                opacity: 0;
-                transform: translateX(-40%);
-                animation: fadeInSide 6s ease forwards infinite;
-
-                @keyframes fadeInSide {
-                    10%,40% {
-                        opacity: 0;
-                        transform: translateX(-30%);
-                    }
-                    50%, 100% {
-                        opacity: 1;
-                        transform: translateX(0%);
-                    }
-                }
-            }
-            &#phoneTick1 {
-                opacity: 0;
-                transform: translateY(-30%);
-                animation: dropTick1 6s ease forwards infinite;
-
-                @keyframes dropTick1 {
-                    10%,20% {
-                        opacity: 0;
-                        transform: translateY(-30%);
-                    }
-                    25%, 100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
-            &#phoneTick2 {
-                opacity: 0;
-                transform: translateY(-30%);
-                animation: dropTick2 6s ease forwards infinite;
-
-                @keyframes dropTick2 {
-                    10%,25% {
-                        opacity: 0;
-                        transform: translateY(-30%);
-                    }
-                    30%, 100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
-            &#phoneTick3 {
-                opacity: 0;
-                transform: translateY(-30%);
-                animation: dropTick3 6s ease forwards infinite;
-
-                @keyframes dropTick3 {
-                    10%,30% {
-                        opacity: 0;
-                        transform: translateY(-30%);
-                    }
-                    35%, 100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
+            background-image: url("../../earth.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
         }
     }
 
-    .right {
-        z-index: 3;
-        width: 50%;
+    .container {
         height: 100%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-content: center;
         justify-content: center;
-        overflow-x:unset;
+        flex-direction: row;
 
-        @media screen and (max-width: map-get($breakpoint, medium)) 
-        {
-            width: 100%;
-            height: 50%;
+        .left {
+            z-index: 3;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+            overflow-x:unset;
+
+            @media screen and (max-width: map-get($breakpoint, medium)) 
+            {
+                width: 100%;
+                height: 50%;
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: map-get($breakpoint, small)) 
+            {
+                margin-bottom: 0px;
+            }
+
+            img {
+                margin-left: 140px;
+                position: absolute;
+                height: 75%;
+                width: 100%;
+
+                @media screen and (max-width: map-get($breakpoint, large)) 
+                {
+                    height: 50%;
+                    margin-left: 0px;
+                }
+                @media screen and (max-width: map-get($breakpoint, medium)) 
+                {
+                    height: 70%;
+                }
+                @media screen and (max-width: map-get($breakpoint, small)) 
+                {
+                    height: 80%;
+                }
+                @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+                {
+                    height: unset;
+                    width: 40%;
+                }
+                
+                &#phoneGrey {
+                    opacity: 0;
+                    transform: translateY(20%);
+                    animation: fadeInUp 6s ease forwards infinite;
+
+                    @keyframes fadeInUp {
+                        0%, 4% {
+                            opacity: 0;
+                        }
+                        5%, 9% {
+                            opacity: 1;
+                        }
+                        10%, 100% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+                &#phoneCard {
+                    opacity: 0;
+                    transform: translateY(-20%);
+                    animation: fadeInDown 6s ease forwards infinite;
+
+                    @keyframes fadeInDown {
+                        10% {
+                            opacity: 0;
+                            transform: translateY(-20%);
+                        }
+                        20% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+                &#phonePay {
+                    opacity: 0;
+                    transform: translateX(-40%);
+                    animation: fadeInSide 6s ease forwards infinite;
+
+                    @keyframes fadeInSide {
+                        10%,40% {
+                            opacity: 0;
+                            transform: translateX(-30%);
+                        }
+                        50%, 100% {
+                            opacity: 1;
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+                &#phoneTick1 {
+                    opacity: 0;
+                    transform: translateY(-30%);
+                    animation: dropTick1 6s ease forwards infinite;
+
+                    @keyframes dropTick1 {
+                        10%,20% {
+                            opacity: 0;
+                            transform: translateY(-30%);
+                        }
+                        25%, 100% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+                &#phoneTick2 {
+                    opacity: 0;
+                    transform: translateY(-30%);
+                    animation: dropTick2 6s ease forwards infinite;
+
+                    @keyframes dropTick2 {
+                        10%,25% {
+                            opacity: 0;
+                            transform: translateY(-30%);
+                        }
+                        30%, 100% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+                &#phoneTick3 {
+                    opacity: 0;
+                    transform: translateY(-30%);
+                    animation: dropTick3 6s ease forwards infinite;
+
+                    @keyframes dropTick3 {
+                        10%,30% {
+                            opacity: 0;
+                            transform: translateY(-30%);
+                        }
+                        35%, 100% {
+                            opacity: 1;
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+            }
         }
 
-        .container {
-            width: 60%;
+        .right {
+            z-index: 3;
+            width: 50%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            overflow-x:unset;
 
-            @media screen and (max-width: map-get($breakpoint, xxlarge)) 
-            {
-                width: 90%;
-            }
             @media screen and (max-width: map-get($breakpoint, medium)) 
             {
-                align-items: center;
-            }
-        
-            h1 {
                 width: 100%;
-                font-size: 70px;
-                line-height: 100px;
-                color: $darkBlue;
-                overflow-x: unset;
+                height: 50%;
+                align-items: center;
+                justify-content: flex-start;
+            }
 
-                
-                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
+            .container {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                @media screen and (max-width: map-get($breakpoint, xxlarge)) 
                 {
-                    font-size: 60px;
-                    line-height: 80px;
-                }
-                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-                {
-                    font-size: 40px;
-                    line-height: 56px;
+                    width: 90%;
                 }
                 @media screen and (max-width: map-get($breakpoint, medium)) 
                 {
-                    font-size: 26px;
-                    line-height: 40px;
-                    text-align: center;
+                    align-items: center;
                 }
-            }
+            
+                h1 {
+                    width: 100%;
+                    font-size: 70px;
+                    line-height: 90px;
+                    color: white;
+                    overflow-x: unset;
 
-            h2 {
-                position: relative;
-                white-space : nowrap;
-                font-size: 70px;
-                text-align: left;
-                color: transparent;
-                -webkit-text-stroke: 2px $midBlue;
-                overflow-x: unset;
-                &::before {
-                    content: attr(data-text);
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 0;
-                    height: 100%;
-                    color: $midBlue;
-                    -webkit-text-stroke: 0px $midBlue;
-                    border-right: 4px solid $midBlue;
-                    overflow: hidden;
-                    animation: animate 6s linear infinite;
-                    @keyframes animate {
-                        0%,10%,100%  
-                        {
-                            width: 0;
-                        }
-                        70%,90%  
-                        {
-                            width: 99%;
-                        }
+                    
+                    @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
+                    {
+                        font-size: 60px;
+                        line-height: 80px;
+                    }
+                    @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+                    {
+                        font-size: 40px;
+                        line-height: 56px;
+                    }
+                    @media screen and (max-width: map-get($breakpoint, medium)) 
+                    {
+                        font-size: 26px;
+                        line-height: 40px;
+                        text-align: center;
                     }
                 }
-                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
-                {
-                    -webkit-text-stroke: 1px $midBlue;
-                    font-size: 60px;
-                    line-height: 80px;
-                }
-                @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-                {
-                    font-size: 40px;
-                    line-height: 56px;
-                }
-                @media screen and (max-width: map-get($breakpoint, medium)) 
-                {
-                    font-size: 40px;
-                }
-            }
 
-            p {
-                width: 100%;
-                margin-top: 30px;
-                margin-bottom: 40px;
-                font-size: 22px;
-                font-weight: 300;
-                line-height: 40px;
-                color: #323353;
-
-                span {
-                    font-weight: 600;
+                h2 {
+                    position: relative;
+                    white-space : nowrap;
+                    font-size: 70px;
+                    line-height: 90px;
+                    text-align: left;
+                    color: transparent;
+                    -webkit-text-stroke: 2px $midBlue;
+                    overflow-x: unset;
+                    &::before {
+                        content: attr(data-text);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        color: $midBlue;
+                        -webkit-text-stroke: 0px $midBlue;
+                        border-right: 4px solid $midBlue;
+                        overflow: hidden;
+                        animation: animate 6s linear infinite;
+                        @keyframes animate {
+                            0%,10%,100%  
+                            {
+                                width: 0;
+                            }
+                            70%,90%  
+                            {
+                                width: 99%;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
+                    {
+                        -webkit-text-stroke: 1px $midBlue;
+                        font-size: 60px;
+                        line-height: 80px;
+                    }
+                    @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+                    {
+                        font-size: 40px;
+                        line-height: 56px;
+                    }
+                    @media screen and (max-width: map-get($breakpoint, medium)) 
+                    {
+                        font-size: 40px;
+                    }
                 }
 
-                @media screen and (max-width: map-get($breakpoint, large)) 
-                {
-                    font-size: 20px;
-                    line-height: 30px;
-                }
-                @media screen and (max-width: map-get($breakpoint, medium)) 
-                {
+                p {
                     width: 100%;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 40px;
+                    color: white;
+
+                    span {
+                        font-weight: 600;
+                    }
+
+                    @media screen and (max-width: map-get($breakpoint, large)) 
+                    {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    @media screen and (max-width: map-get($breakpoint, medium)) 
+                    {
+                        width: 100%;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                    }
                 }
-            }
 
-            .button {
-                padding: 20px 25px;
-                background-color: $midBlue;
-                border-radius: 5px;
-                color: white;
-                font-size: 18px;
-                font-weight: 600;
-                text-decoration: none;
+                .button {
+                    padding: 20px 25px;
+                    background-color: $midBlue;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-decoration: none;
 
-                &:hover {
-                    background-color: $darkBlue;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
                 }
             }
         }

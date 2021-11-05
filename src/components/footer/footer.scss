@@ -9,10 +9,6 @@
     justify-content: center;
     flex-direction: column;
 
-    @media screen and (max-height: map-get($breakpoint, large)) and (orientation: landscape)
-    {
-        height: 65vh;
-    }
     @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
     {
         height: 140vh;
@@ -75,15 +71,10 @@
 
             p {
                 font-weight: 300;
-                font-size: 20px;
+                font-size: 18px;
                 text-align: center;
                 color: $darkBlue;
                 margin-bottom: 20px;
-
-                @media screen and (max-width: map-get($breakpoint, medium)) 
-                {
-                    font-size: 18px;
-                }
             }
 
             .inputContainer {
@@ -248,6 +239,7 @@
         height: 10%;
         display: flex;
         align-items: flex-end;
+        margin-bottom: 10px;
 
         @media screen and (max-width: map-get($breakpoint, medium)) 
         {

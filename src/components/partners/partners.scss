@@ -9,6 +9,28 @@
     justify-content: center;
     flex-direction: column;
 
+    #sideCircleLeft {
+        position: absolute;
+        left: 0;
+        height: 75vh;
+
+        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+    }
+
+    #sideCircleRight {
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        height: 75vh;
+
+        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+    }
 
     .container {
         width: 100%;

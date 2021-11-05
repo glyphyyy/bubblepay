@@ -5,8 +5,8 @@ export default function Details() {
     return (
         <div className="details">
             <div className="container">
-                <img id="sideCircleLeft" src="assets/side-circle-2.svg" alt="" />
-                <img id="sideCircleRight" src="assets/side-circle-2.svg" alt="" />
+                <img id="sideCircleLeft" src="assets/dots.svg" alt="" />
+                <img id="sideCircleRight" src="assets/dots.svg" alt="" />
                 <header>
                     <h1><span>Fast</span> and <span>secure</span> payments, made simple.</h1>
                     <p>

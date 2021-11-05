@@ -5,6 +5,8 @@ export default function Partners() {
     return (
         <div className="partners">
             <div className="container">
+                <img id="sideCircleLeft" src="assets/dotsAlt.svg" alt="" />
+                <img id="sideCircleRight" src="assets/dotsAlt.svg" alt="" />
                 <div className="title">
                     <h1>Our <span>trusted</span> partners</h1>
                     <p>
