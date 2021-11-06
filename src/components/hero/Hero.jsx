@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero">
             <div className="left">
                 <div className="container">
-                    <h1>Payment made <span>quick</span> and <span>easy</span> with BubblePay.</h1>
+                    <h1>Payment made <span>quick</span> and <span id="easy">easy</span> with BubblePay.</h1>
                     <p>
                         Lighting fast payment for <span>businesses</span> and <span>customers</span> alike!
                         Try our free trial today welcome super fast payments into your business today!
@@ -18,6 +18,9 @@ export default function Hero() {
                 </div>
             </div>
             <div className="right">
+                <img id="greenCircle" src="assets/greenCircle.png" alt="" />
+                <img id="yellowCircle" src="assets/yellowCircle.png" alt="" />
+                <img id="blueCircle" src="assets/blueCircle.png" alt="" />
                 <img src="assets/woman.png" alt="" />
             </div>
             <AnimatedCircles />

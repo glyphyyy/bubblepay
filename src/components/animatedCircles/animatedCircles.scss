@@ -1,10 +1,10 @@
 @import "../../global.scss";
 
 .circleLarge1 {
-    filter: blur(4px);
+    filter: blur(6px);
     width: 200px;
     height: 200px;
-    background-color: $lightBlue;
+    background-color: $yellow;
     opacity: 0.2;
     position: absolute;
     transform: translate(-60vw, 20vh);
@@ -21,10 +21,10 @@
 }
 
 .circleLarge2 {
-    filter: blur(4px);
+    filter: blur(8px);
     width: 250px;
     height: 250px;
-    background-color: $midBlue;
+    background-color: $blue;
     opacity: 0.2;
     position: absolute;
     transform: translate(-60vw, 30vh);
@@ -41,10 +41,10 @@
 }
 
 .circleMedium1 {
-    filter: blur(3px);
+    filter: blur(5px);
     width: 100px;
     height: 100px;
-    background-color: $midBlue;
+    background-color: $green;
     opacity: 0.2;
     position: absolute;
     transform: translate(-60vw, 90vh);
@@ -61,10 +61,10 @@
 }
 
 .circleMedium2 {
-    filter: blur(3px);
+    filter: blur(5px);
     width: 100px;
     height: 100px;
-    background-color: $lightBlue;
+    background-color: $purple;
     opacity: 0.2;
     position: absolute;
     transform: translate(-60vw, 70vh);
@@ -72,7 +72,7 @@
     border-radius: 50%;
     border: none;
     
-        animation: circlemedium2 15s linear alternate infinite;
+        animation: circlemedium2 18s linear alternate infinite;
         @keyframes circlemedium2 {
             to{
                 transform: translate(60vw, 30vh);
@@ -81,10 +81,10 @@
 }
 
 .circleSmall1 {
-    filter: blur(3px);
+    filter: blur(4px);
     width: 60px;
     height: 60px;
-    background-color: $lightBlue;
+    background-color: $blue;
     opacity: 0.2;
     position: absolute;
     transform: translate(-60vw, 10vh);
@@ -101,7 +101,7 @@
 }
 
 .circleSmall2 {
-    filter: blur(3px);
+    filter: blur(4px);
     width: 60px;
     height: 60px;
     background-color: $midBlue;
@@ -112,7 +112,7 @@
     border-radius: 50%;
     border: none;
     
-        animation: circlesmall2 15s linear alternate infinite;
+        animation: circlesmall2 17s linear alternate infinite;
         @keyframes circlesmall2 {
             to{
                 transform: translate(60vw, 20vh);

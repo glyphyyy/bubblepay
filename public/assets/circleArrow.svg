@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
-  <g id="Group_48" data-name="Group 48" transform="translate(-417 -3883)">
-    <circle id="Ellipse_24" data-name="Ellipse 24" cx="35.5" cy="35.5" r="35.5" transform="translate(417 3883)" fill="#4d9be6"/>
-    <path id="Polygon_4" data-name="Polygon 4" d="M19,0,38,34.171H0Z" transform="translate(474.671 3899.5) rotate(90)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Group_48" data-name="Group 48" transform="translate(-0.177 -0.158)">
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="19" cy="19" r="19" transform="translate(0.177 0.158)" fill="#91db69"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M10.211,0,20.422,18.364H0Z" transform="translate(30.994 8.868) rotate(90)" fill="#fff"/>
   </g>
 </svg>

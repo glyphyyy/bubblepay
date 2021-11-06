@@ -4,7 +4,7 @@ import React from 'react'
 export default function Info() {
     return (
         <div className="info">
-            <div className="bg"><div className="earth"></div></div>
+            <div className="bg"><div className="earth"></div><div className="cover"></div></div>
             <div className="container">
                 <div className="left">
                 <div className="circle"></div>

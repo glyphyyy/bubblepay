@@ -4,11 +4,13 @@ import React from 'react'
 export default function Details() {
     return (
         <div className="details">
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+            <div className="circle3"></div>
+            <div className="circle4"></div>
             <div className="container">
-                <img id="sideCircleLeft" src="assets/dots.svg" alt="" />
-                <img id="sideCircleRight" src="assets/dots.svg" alt="" />
                 <header>
-                    <h1><span>Fast</span> and <span>secure</span> payments, made simple.</h1>
+                    <h1><span>Fast</span> and <span id="secure">secure</span> payments, made <span id="simple">simple.</span></h1>
                     <p>
                         BubblePay is an all in one payment system for individual and business use.
                         <span>Its fast, secure and the perfect fit for you, we've got you covered!</span>
@@ -16,7 +18,11 @@ export default function Details() {
                 </header>
                 <div className="text">
                     <div className="textBox">
-                        <img id="shield" src="assets/logo-shield.svg" alt="" />
+                        <div className="imageContainer">
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
+                            <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleMain" src="assets/logo-shield.svg" alt="" />
+                        </div>
                         <h1><span>Security</span> as standard</h1>
                         <p>
                             We are highly proud of our security and encryption systems that our in place at BubblePay.
@@ -24,7 +30,11 @@ export default function Details() {
                         </p>
                     </div>
                     <div className="textBox">
-                        <img id="fast" src="assets/logo-fast.svg" alt="" />
+                        <div className="imageContainer">
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
+                            <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleMain" src="assets/logo-fast.svg" alt="" />
+                        </div>
                         <h1><span>Fast</span> speeds you can depend on</h1>
                         <p>
                             BubblePay is an all in one payment system for individual and business use.
@@ -32,7 +42,11 @@ export default function Details() {
                         </p>
                     </div>
                     <div className="textBox">
-                        <img id="simple" src="assets/logo-simple.svg" alt="" />
+                        <div className="imageContainer">
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
+                            <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleMain" src="assets/logo-simple.svg" alt="" />
+                        </div>
                         <h1><span>Simple</span> and easily accessible </h1>
                         <p>
                             We are highly proud of our security and encryption systems that our in place at BubblePay.
@@ -40,7 +54,11 @@ export default function Details() {
                         </p>
                     </div>
                     <div className="textBox">
-                        <img id="grow" src="assets/logo-grow.svg" alt="" />
+                        <div className="imageContainer">
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
+                            <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleMain" src="assets/logo-grow.svg" alt="" />
+                        </div>
                         <h1><span>Grow</span> your business with BubblePay</h1>
                         <p>
                             We are highly proud of our security and encryption systems that our in place at BubblePay.

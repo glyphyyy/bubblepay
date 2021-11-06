@@ -1,35 +1,62 @@
 @import "../../global.scss";
 
 .details {
+    min-height: 100vh;
     max-height: 500vh;
     width: 100%;
-    background-color: $darkBlue;
+    background: linear-gradient(135deg, rgba(249,194,43,.3) 0%, rgba(77,155,230,.3) 50%, rgba(145,219,105,.3) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 
-    #sideCircleLeft {
+    .circle1 {
+        filter: blur(1px);
+        width: 200px;
+        height: 200px;
+        transform: translate(350%, -100%);
+        background-color: $yellow;
+        opacity: 0.15;
         position: absolute;
-        left: 0;
-        height: 75vh;
-
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-        {
-            display: none;
-        }
-    }
-
-    #sideCircleRight {
         z-index: 0;
+        border-radius: 50%;
+        border: none;
+    }
+    .circle2 {
+        filter: blur(1px);
+        width: 150px;
+        height: 150px;
+        transform: translate(-500%, -100%);
+        background-color: $green;
+        opacity: 0.15;
         position: absolute;
-        right: 0;
-        height: 75vh;
-
-        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
-        {
-            display: none;
-        }
+        z-index: 0;
+        border-radius: 50%;
+        border: none;
+    }
+    .circle3 {
+        filter: blur(1px);
+        width: 120px;
+        height: 120px;
+        transform: translate(-100%, 100%);
+        background-color: $blue;
+        opacity: 0.15;
+        position: absolute;
+        z-index: 0;
+        border-radius: 50%;
+        border: none;
+    }
+    .circle4 {
+        filter: blur(1px);
+        width: 100px;
+        height: 100px;
+        transform: translate(200%, 8%);
+        background-color: $purple;
+        opacity: 0.15;
+        position: absolute;
+        z-index: 0;
+        border-radius: 50%;
+        border: none;
     }
 
     .container {
@@ -59,7 +86,7 @@
             h1 {
                 width: 100%;
                 text-align: center;
-                color: white;
+                color: $black;
                 font-size: 50px;
                 font-weight: 700;
                 margin-bottom: 5px;
@@ -83,16 +110,22 @@
                 }
 
                 span {
-                    color: $midBlue;
+                    color: $blue;
+                }
+                #secure {
+                    color: $yellow;
+                }
+                #simple {
+                    color: $green;
                 }
             }
 
             p {
                 width: 100%;
                 text-align: center;
-                color: white;
+                color: $black;
                 font-size: 20px;
-                font-weight: 300;
+                font-weight: 400;
 
                 @media screen and (max-width: map-get($breakpoint, large)) 
                 {
@@ -155,7 +188,7 @@
                 }
 
                 h1 {
-                    color: white;
+                    color: $black;
                     font-size: 22px;
                     font-weight: 700;
                     margin-bottom: 5px;
@@ -172,9 +205,9 @@
                 }
 
                 p {
-                    color: white;
+                    color: $black;
                     font-size: 18px;
-                    font-weight: 300;
+                    font-weight: 400;
                     margin-bottom: 10px;
 
                     @media screen and (max-width: map-get($breakpoint, large)) 
@@ -191,13 +224,42 @@
                     }
                 }
 
-                img {
-                    height: 15%;
-                    margin-bottom: 10px;
-                }
+                .imageContainer {
+                    height: 50px;
 
-                #shield {
-                    height: 18%;
+                    img {
+                        height: 40px;
+                        position: absolute;
+                    }
+                    &:hover #circleBlue {
+                        transform: translateX(-30%);
+                        opacity: 0.7;
+                    }
+                    &:hover #circleYellow {
+                        opacity: 0.5;
+                        transform: translateX(-80%);
+                    }
+                    &:hover #circleMain {
+                        transform: translateX(10%);
+                    }
+
+                    #circleMain{
+                        z-index: 1;
+                        position: absolute;
+                        transition: all .7s ease;
+                    }
+                    #circleBlue {
+                        opacity: 1;
+                        position: absolute;
+                        width: 35px;
+                        transition: all .7s ease;
+                    }
+                    #circleYellow {
+                        opacity: 1;
+                        position: absolute;
+                        width: 30px;
+                        transition: all .7s ease;
+                    }
                 }
             }
         }

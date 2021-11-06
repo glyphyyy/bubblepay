@@ -5,7 +5,7 @@
     height: 80px;
     width: 100%;
     z-index: 10;
-    background-color: white;
+    background-color: #FBFFFE;
 
     @media screen and (max-width: map-get($breakpoint, large))
     {
@@ -69,10 +69,10 @@
                         cursor: pointer;
                         font-size: 16px;
                         font-weight: 500;
-                        color: $darkBlue;
+                        color: $black;
 
                         &:hover {
-                            color: $midBlue;
+                            color: $blue;
                         }
                     }
 
@@ -82,10 +82,10 @@
                         align-items: center;
 
                         &:hover #line1{
-                            stroke: $midBlue;
+                            stroke: $blue;
                         }
                         &:hover #line2{
-                            stroke: $midBlue;
+                            stroke: $blue;
                         }
                         &:hover svg {
                             animation: dropDown1 .5s ease infinite;
@@ -118,8 +118,8 @@
                 justify-content: flex-end;
 
                 .button {
-                    padding: 15px 25px;
-                    background-color: $midBlue;
+                    padding: 10px 25px;
+                    background-color: $green;
                     border-radius: 5px;
                     color: white;
                     font-size: 18px;
@@ -133,7 +133,7 @@
                     }
 
                     &:hover {
-                        background-color: $darkBlue;
+                        background-color: #1EBC73;
                     }
                 }
 
@@ -177,6 +177,11 @@
                     transform: rotate(-45deg);
                 }
             }
+        }
+    }
+    &.active {
+        #products {
+            opacity: 0;
         }
     }
 }

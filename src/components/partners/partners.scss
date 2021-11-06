@@ -1,31 +1,39 @@
 @import "../../global.scss";
 
 .partners {
+    min-height: 100vh;
     max-height: 1000vh;
     width: 100%;
-    background-color: white;
+    background-color: #FBFFFE;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    #sideCircleLeft {
+    #dotsLeft {
         position: absolute;
-        left: 0;
-        height: 75vh;
+        left: 10px;
+        height: 80%;
 
+        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
+        {
+            display: none;
+        }
         @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
         {
             display: none;
         }
     }
 
-    #sideCircleRight {
-        z-index: 0;
+    #dotsRight {
         position: absolute;
-        right: 0;
-        height: 75vh;
+        right: 10px;
+        height: 80%;
 
+        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: 1366px) 
+        {
+            display: none;
+        }
         @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
         {
             display: none;
@@ -39,7 +47,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 80px;
 
         .title {
             height: 20%;
@@ -57,7 +65,7 @@
 
             h1 {
                 text-align: center;
-                color: $darkBlue;
+                color: $black;
                 font-size: 50px;
                 font-weight: 700;
                 margin-bottom: 10px;
@@ -83,14 +91,15 @@
                 }
 
                 span {
-                    color: $midBlue;
+                    color: $green;
                 }
             }
 
             p {
                 text-align: center;
-                font-size: 22px;
-                font-weight: 300;
+                font-size: 20px;
+                font-weight: 400;
+                color: $black;
 
                 @media screen and (max-width: map-get($breakpoint, large)) 
                 {
@@ -154,19 +163,25 @@
                     margin: 30px;
                 }
 
-
-                img {
+                .logoContainer {
                     width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                    @media screen and (max-width: 500px) 
-                    {
-                        width: 120px;
+                    img {
+                        height:40%;
+
+                        @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+                        {
+                            height:50%;
+                        }
                     }
-    
                 }
 
                 a {
-                    margin-top: 40px;
+                    margin-top: 10px;
                     width: 20px;
                     height: 20px;
                     cursor: pointer;
@@ -181,16 +196,16 @@
     
                     
                     img {
-                        width: 50px;
+                        width: 40px;
                     }
 
-                    &:hover #circleLight {
+                    &:hover #circleBlue {
                         transform: translateX(-30%);
-                        opacity: 0.5;
+                        opacity: 0.7;
                     }
-                    &:hover #circleDark {
-                        opacity: 0.2;
-                        transform: translateX(-60%);
+                    &:hover #circleYellow {
+                        opacity: 0.5;
+                        transform: translateX(-80%);
                     }
                     &:hover #circleArrow {
                         transform: translateX(10%);
@@ -199,20 +214,19 @@
                     #circleArrow {
                         z-index: 1;
                         position: absolute;
-                        height: 5%;
-                        transition: all 1s ease;
+                        transition: all .7s ease;
                     }
-                    #circleLight {
+                    #circleBlue {
                         opacity: 1;
                         position: absolute;
-                        height: 4.5%;
-                        transition: all 1s ease;
+                        width: 35px;
+                        transition: all .7s ease;
                     }
-                    #circleDark {
+                    #circleYellow {
                         opacity: 1;
                         position: absolute;
-                        height: 4%;
-                        transition: all 1s ease;
+                        width: 30px;
+                        transition: all .7s ease;
                     }
                 }
             }

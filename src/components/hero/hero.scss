@@ -3,7 +3,7 @@
 .hero {
     height: calc(100vh - 80px);
     width: 100%;
-    background-color: white;
+    background-color: #FBFFFE;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -12,6 +12,7 @@
     @media screen and (max-width: map-get($breakpoint, large)) 
     {
         flex-direction: column;
+        height: 100vh;
     }
     @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
     {
@@ -84,11 +85,17 @@
                 font-size: 70px;
                 text-align: left;
                 line-height: 90px;
-                color: $darkBlue;
+                color: $black;
                 overflow-x: unset;
 
                 span {
-                    color: $midBlue;
+                    color: $blue;
+                    text-decoration: underline;
+                }
+
+                #easy {
+                    color: $green;
+                    text-decoration: underline;
                 }
 
                 @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
@@ -108,18 +115,19 @@
             }
 
             p {
-                width: 75%;
+                width: 80%;
                 margin-top: 30px;
                 margin-bottom: 30px;
                 font-size: 20px;
                 font-weight: 300;
                 text-align: left;
                 line-height: 40px;
-                color: #323353;
+                color: $black;
                 overflow-x: unset;
+                font-weight: 400;
 
                 span {
-                    font-weight: 600;
+                    font-weight: 700;
                 }
 
                 @media screen and (max-width: map-get($breakpoint, large)) 
@@ -145,7 +153,7 @@
 
             .button {
                 padding: 20px 25px;
-                background-color: $midBlue;
+                background-color: $green;
                 border-radius: 5px;
                 color: white;
                 font-size: 18px;
@@ -160,7 +168,7 @@
                 }
 
                 &:hover {
-                    background-color: $darkBlue;
+                    background-color: $darkGreen;
                 }
             }
 
@@ -211,7 +219,7 @@
             z-index: 2;
             position: absolute;
             top: 80px;
-            right: 140px;
+            right: 200px;
             
             @media screen and (max-width: map-get($breakpoint, xxlarge)) 
             {
@@ -219,11 +227,62 @@
             }
             @media screen and (max-width: map-get($breakpoint, large)) 
             {
-                right: -140px;
+                right: 20px;
                 height: unset;
-                width: 95%;
-                top: 35%;
+                width: 73%;
+                top: 30%;
             }    
+        }
+
+        #yellowCircle {
+            opacity: 0;
+
+            animation: yellowCircle 12s ease infinite;
+            @keyframes yellowCircle {
+                0% {
+                    opacity: 0;
+                }
+                10%, 33%{
+                    opacity: 1;
+                }
+                43%, 100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        #blueCircle {
+            opacity: 0;
+
+            animation: blueCircle 12s ease infinite;
+            @keyframes blueCircle {
+                0%, 33%{
+                    opacity: 0;
+                }
+                43%, 66%{
+                    opacity: 1;
+                }
+                76%, 100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        #greenCircle {
+            opacity: 0;
+
+            animation: greenCircle 12s ease infinite;
+            @keyframes greenCircle {
+                0% {
+                    opacity: 1;
+                }
+                10%, 66%{
+                    opacity: 0;
+                }
+                76%, 100%{
+                    opacity: 1;
+                }
+            }
         }
     }
 }
