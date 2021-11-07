@@ -47,6 +47,18 @@
         {
             height: 80vh;
         }
+        @media screen and (max-width: map-get($breakpoint, medium)) 
+        {
+            height: 130vh;
+        }
+        @media screen and (max-width: map-get($breakpoint, small)) 
+        {
+            height: 170vh;
+        }
+        @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
+        {
+            height: 160vh;
+        }
 
         .earth {
             position: absolute;
@@ -75,6 +87,11 @@
         justify-content: center;
         flex-direction: row;
 
+        @media screen and (max-width: map-get($breakpoint, medium)) 
+        {
+            flex-direction: column;
+        }
+
         .left {
             z-index: 3;
             width: 50%;
@@ -89,7 +106,6 @@
             {
                 width: 100%;
                 height: 50%;
-                margin-bottom: 40px;
             }
             @media screen and (max-width: map-get($breakpoint, small)) 
             {
@@ -109,11 +125,12 @@
                 }
                 @media screen and (max-width: map-get($breakpoint, medium)) 
                 {
-                    height: 70%;
+                    margin-top: 30px;
+                    height: 65%;
                 }
                 @media screen and (max-width: map-get($breakpoint, small)) 
                 {
-                    height: 80%;
+                    height: 55%;
                 }
                 @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
                 {

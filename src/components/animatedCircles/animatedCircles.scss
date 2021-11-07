@@ -7,7 +7,7 @@
     background-color: $yellow;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 20vh);
+    transform: translate(-60vw, 10vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
@@ -15,9 +15,18 @@
         animation: circlelarge1 25s linear alternate infinite;
         @keyframes circlelarge1 {
             to{
-                transform: translate(60vw, 50vh);
+                transform: translate(60vw, 0vh);
             }
         }
+
+    @media screen and (max-width: map-get($breakpoint, large)) 
+    {
+        display: none;
+    }
+    @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+    {
+        display: none;
+    }
 }
 
 .circleLarge2 {
@@ -27,7 +36,7 @@
     background-color: $blue;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 30vh);
+    transform: translate(-60vw, 20vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
@@ -38,6 +47,49 @@
                 transform: translate(60vw, 0vh);
             }
         }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
+        }
+}
+
+.circleLarge3 {
+    filter: blur(8px);
+    width: 280px;
+    height: 280px;
+    background-color: $purple;
+    opacity: 0.2;
+    position: absolute;
+    transform: translate(-60vw, 60vh);
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlelarge3 60s linear alternate infinite;
+        @keyframes circlelarge3 {
+            to{
+                transform: translate(60vw, 10vh);
+            }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
+        }    @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
+        }
 }
 
 .circleMedium1 {
@@ -47,16 +99,24 @@
     background-color: $green;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 90vh);
+    transform: translate(-60vw, 80vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
     
-        animation: circlemedium1 20s linear alternate infinite;
+        animation: circlemedium1 28s linear alternate infinite;
         @keyframes circlemedium1 {
             to{
-                transform: translate(60vw, 40vh);
+                transform: translate(60vw, 30vh);
             }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
         }
 }
 
@@ -67,16 +127,52 @@
     background-color: $purple;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 70vh);
+    transform: translate(-60vw, 60vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
     
-        animation: circlemedium2 18s linear alternate infinite;
+        animation: circlemedium2 24s linear alternate infinite;
         @keyframes circlemedium2 {
             to{
-                transform: translate(60vw, 30vh);
+                transform: translate(60vw, 40vh);
             }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
+        }
+}
+
+.circleMedium3 {
+    filter: blur(5px);
+    width: 140px;
+    height: 140px;
+    background-color: $red;
+    opacity: 0.2;
+    position: absolute;
+    transform: translate(-60vw, 0vh);
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    
+        animation: circlemedium3 35s linear alternate infinite;
+        @keyframes circlemedium3 {
+            to{
+                transform: translate(60vw, 60vh);
+            }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
         }
 }
 
@@ -87,16 +183,24 @@
     background-color: $blue;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 10vh);
+    transform: translate(-60vw, 0vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
     
-        animation: circlesmall1 15s linear alternate infinite;
+        animation: circlesmall1 20s linear alternate infinite;
         @keyframes circlesmall1 {
             to{
-                transform: translate(60vw, 70vh);
+                transform: translate(60vw, 60vh);
             }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
         }
 }
 
@@ -104,19 +208,27 @@
     filter: blur(4px);
     width: 60px;
     height: 60px;
-    background-color: $midBlue;
+    background-color: $orange;
     opacity: 0.2;
     position: absolute;
-    transform: translate(-60vw, 50vh);
+    transform: translate(-60vw, 40vh);
     z-index: 1;
     border-radius: 50%;
     border: none;
     
-        animation: circlesmall2 17s linear alternate infinite;
+        animation: circlesmall2 18s linear alternate infinite;
         @keyframes circlesmall2 {
             to{
-                transform: translate(60vw, 20vh);
+                transform: translate(60vw, 10vh);
             }
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: map-get($breakpoint, large)) and (orientation: landscape)
+        {
+            display: none;
         }
 }
 

@@ -4,10 +4,7 @@ import React from 'react'
 export default function Details() {
     return (
         <div className="details">
-            <div className="circle1"></div>
-            <div className="circle2"></div>
-            <div className="circle3"></div>
-            <div className="circle4"></div>
+            <div className="cover"></div>
             <div className="container">
                 <header>
                     <h1><span>Fast</span> and <span id="secure">secure</span> payments, made <span id="simple">simple.</span></h1>
@@ -19,8 +16,8 @@ export default function Details() {
                 <div className="text">
                     <div className="textBox">
                         <div className="imageContainer">
-                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleMain" src="assets/logo-shield.svg" alt="" />
                         </div>
                         <h1><span>Security</span> as standard</h1>
@@ -31,8 +28,8 @@ export default function Details() {
                     </div>
                     <div className="textBox">
                         <div className="imageContainer">
-                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleMain" src="assets/logo-fast.svg" alt="" />
                         </div>
                         <h1><span>Fast</span> speeds you can depend on</h1>
@@ -43,8 +40,8 @@ export default function Details() {
                     </div>
                     <div className="textBox">
                         <div className="imageContainer">
-                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleMain" src="assets/logo-simple.svg" alt="" />
                         </div>
                         <h1><span>Simple</span> and easily accessible </h1>
@@ -55,8 +52,8 @@ export default function Details() {
                     </div>
                     <div className="textBox">
                         <div className="imageContainer">
-                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleYellow" src="assets/circleYellow.svg" alt="" />
+                            <img id="circleBlue" src="assets/circleBlue.svg" alt="" />
                             <img id="circleMain" src="assets/logo-grow.svg" alt="" />
                         </div>
                         <h1><span>Grow</span> your business with BubblePay</h1>

@@ -6,8 +6,10 @@ export default function AnimatedCircles() {
         <>
             <div className="circleLarge1" />
             <div className="circleLarge2" />
+            <div className="circleLarge3" />
             <div className="circleMedium1" />
             <div className="circleMedium2" />
+            <div className="circleMedium3" />
             <div className="circleSmall1" />
             <div className="circleSmall2" />
         </>

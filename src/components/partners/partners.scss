@@ -23,6 +23,10 @@
         {
             display: none;
         }
+        @media screen and (max-width: 1366px) and (orientation: landscape)
+        {
+            display: none;
+        }
     }
 
     #dotsRight {
@@ -35,6 +39,10 @@
             display: none;
         }
         @media screen and (max-width: map-get($breakpoint, large)) and (max-height: map-get($breakpoint, large)) 
+        {
+            display: none;
+        }
+        @media screen and (max-width: 1366px) and (orientation: landscape)
         {
             display: none;
         }

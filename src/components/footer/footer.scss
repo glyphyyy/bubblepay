@@ -9,6 +9,10 @@
     justify-content: center;
     flex-direction: column;
 
+    @media screen and (max-height: map-get($breakpoint, large)) and (orientation: landscape)
+    {
+        height: 70vh;
+    }
     @media screen and (max-height: map-get($breakpoint, medium)) and (orientation: landscape)
     {
         height: 140vh;
